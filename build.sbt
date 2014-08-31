@@ -1,4 +1,4 @@
-name := """modelreg"""
+name := """modelviz"""
 
 version := "1.0-SNAPSHOT"
 
