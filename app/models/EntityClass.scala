@@ -6,7 +6,7 @@ case class EntityClass(identifier: String, name: String)
 
 /* Table mapping
  */
-class EntityClassTable(tag: Tag) extends Table[EntityClass](tag, "EntityClass") {
+class EntityClassTable(tag: Tag) extends Table[EntityClass](tag, "EntityClassV") {
 
   def identifier = column[String]("identifier", O.PrimaryKey)
   def name = column[String]("name", O.NotNull)

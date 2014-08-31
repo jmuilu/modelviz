@@ -2,7 +2,7 @@ name := """modelviz"""
 
 version := "1.0-SNAPSHOT"
 
-scalaVersion := "2.11.1"
+scalaVersion := "2.11.2"
 
 libraryDependencies ++= Seq(
   "org.webjars" %% "webjars-play" % "2.3.0",
