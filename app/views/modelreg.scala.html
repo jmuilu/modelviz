@@ -1,0 +1,31 @@
+@( name: String )
+<!-- 
+http://briantford.com/blog/huuuuuge-angular-apps 
+http://www.toptal.com/angular-js/a-step-by-step-guide-to-your-first-angularjs-app
+http://www.mariussoutier.com/blog/2013/06/30/using-play-routes-with-angularjs-and-requirejs/
+-->
+@main("ModelReg") {
+
+<h2>Entities</h2> 
+<div  class="diagram" id="mydia" ng-controller="entityCtrl" ng-style="diagramstyle"  ng-mousemove="myMouse.move($event)" ng-mousemove="myMouse.up($event)">
+<!--  style="height:400px;width:600px;float:left;" -->
+
+<div >
+  Entity: {{entity.identifier}} Dim: W:{{wWidth}}/{{testWidth}}xH:{{wHeight}}/{{testHeight}} Mouse: {{mLocation}} 
+</div>
+
+<div class="info" >
+  <b>{{name}}</b> </br>
+  <em>{{description}}</em>
+</div>
+
+</div>
+
+
+<script type='text/javascript' src='@routes.Assets.at("modelviz/app.js")'></script>
+<script type='text/javascript' src='@routes.Assets.at("modelviz/controllers/modelvizControllers.js")'></script>
+<script type='text/javascript' src='@routes.Assets.at("modelviz/directives/guiDirectives.js")'></script>
+<script type='text/javascript' src='@routes.Assets.at("modelviz/services/databaseServices.js")'></script>
+
+
+}

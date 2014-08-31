@@ -1,0 +1,13 @@
+.diagram {
+	border: 1px solid red;
+	overflow: auto;
+}
+
+.info {
+    position:fixed;  
+    bottom:10px;right:20px;  
+    padding:20px;background:#FFFFFF;  
+    border:2px solid #2266AA;  
+    z-index:100;
+    opacity: 0.8;
+}

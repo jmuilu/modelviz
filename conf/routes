@@ -1,0 +1,32 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.Application.index
+
+# Home page
+POST    /insert                     controllers.Application.insert
+
+GET     /json/all                   controllers.Application.jsonFindAll
+
+# Home page
+POST    /json/insert                controllers.Application.jsonInsert
+
+# Home page
+GET    /modelviz                    controllers.ModelRegApplication.index
+
+GET    /attribute                   controllers.ModelRegApplication.attribute
+
+GET    /entity                     controllers.ModelRegApplication.entity
+
+
+# Map static resources from the /public folder to the /assets URL path
+#
+# http://www.webjars.org/documentation
+
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
+
+GET     /webjars/*file              controllers.WebJarAssets.at(file)
+
+GET     /vassets/*file              controllers.Assets.versioned(path="/public", file: Asset)

@@ -1,0 +1,17 @@
+@(entities: List[EntityClass])
+
+@main("ModelReg") {
+  <h2>Entities</h2>
+
+  <a href="modelviz">ModelViz</a>
+  <h2>All entities:</h2>
+  <table border="1">
+    <tr><th>Name</th><th>Identifier</th></tr>
+    @for(c <- entities){ 
+    <tr><td>@c.name</td><td>@c.identifier</td></tr>
+    }
+  </table>
+
+
+    
+}
