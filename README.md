@@ -1,4 +1,6 @@
-Activator template for Play Framework and the Slick database access library
-This template helps building a classic web app or a JSON API
+#Modelviz#
+Data model visualizer. Uses molgenis-model-registry v. 2.1. Use:
+- install database views available in conf/views.sql. Edit connection details conf/application.conf
+- run using sbt or activator
 
-For a more complex example, see the [computer database sample](https://github.com/playframework/play-slick/tree/master/samples/computer-database)
+
